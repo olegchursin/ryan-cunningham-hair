@@ -14,9 +14,9 @@ const Testimonial = ({ text, imgSrc, personName, hashtag }: ITestimonial) => {
         <div className="w-full pt-1 text-center pb-5 -mt-16 mx-auto">
           <a href="#" className="block relative">
             <img
-              alt="profil"
+              className="mx-auto object-cover h-20 w-20 mask mask-hexagon"
+              alt={personName}
               src={imgSrc}
-              className="mx-auto object-cover rounded-full h-20 w-20 "
             />
           </a>
         </div>

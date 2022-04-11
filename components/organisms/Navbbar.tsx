@@ -1,16 +1,12 @@
+import Link from 'next/link';
 import React from 'react';
 
 const Navbbar = () => {
   return (
-    <div className="navbar bg-base-300">
+    <div className="navbar bg-white dark:bg-slate-900">
       <div className="navbar-start">
-        <a className="btn btn-ghost normal-case text-xl">
-          Ryan Cunningham Hair
-        </a>
-      </div>
-      <div className="navbar-end">
-        <div className="dropdown dropdown-end">
-          <label tabIndex={0} className="btn btn-ghost btn-circle">
+        <div className="dropdown">
+          <label tabIndex={0} className="btn btn-ghost lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -22,7 +18,7 @@ const Navbbar = () => {
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h7"
+                d="M4 6h16M4 12h8m-8 6h16"
               />
             </svg>
           </label>
@@ -31,16 +27,33 @@ const Navbbar = () => {
             className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li>
-              <a>Homepage</a>
+              <Link href="/about">About</Link>
             </li>
             <li>
-              <a>Portfolio</a>
+              <a>Item 2</a>
             </li>
             <li>
-              <a>About</a>
+              <a>Item 3</a>
             </li>
           </ul>
         </div>
+        <a className="btn btn-ghost normal-case text-xl">RC</a>
+      </div>
+      <div className="navbar-center hidden lg:flex">
+        <ul className="menu menu-horizontal p-0">
+          <li>
+            <Link href="/about">About</Link>
+          </li>
+          <li>
+            <a>Item 2</a>
+          </li>
+          <li>
+            <a>Item 3</a>
+          </li>
+        </ul>
+      </div>
+      <div className="navbar-end">
+        <button className="btn btn-accent btn-sm">Book Now</button>
       </div>
     </div>
   );
