@@ -1,7 +1,13 @@
 import React from 'react';
 
+import Layout from '../components/templates/Layout';
+
 const about = () => {
-  return <div>About</div>;
+  return (
+    <Layout>
+      <h1>About</h1>
+    </Layout>
+  );
 };
 
 export default about;

@@ -3,7 +3,7 @@ import React from 'react';
 
 const Navbbar = () => {
   return (
-    <div className="navbar bg-white dark:bg-slate-900">
+    <div className="container navbar bg-white dark:bg-slate-900">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -37,7 +37,7 @@ const Navbbar = () => {
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost normal-case text-xl">RC</a>
+        <Link href="/">RC</Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal p-0">
