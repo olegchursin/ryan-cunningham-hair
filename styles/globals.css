@@ -55,3 +55,9 @@ h6 {
 #__next {
   isolation: isolate;
 }
+
+@layer base {
+  html {
+    font-family: Poppins, system-ui, sans-serif;
+  }
+}
