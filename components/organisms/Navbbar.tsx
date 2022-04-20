@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 
-import Button from '../atoms/Button';
+import BookNowBtn from '../molecules/BookNowBtn';
 
 const Navbbar = () => {
   return (
@@ -55,7 +55,7 @@ const Navbbar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <Button label="Book Now" color="green" />
+        <BookNowBtn />
       </div>
     </div>
   );
