@@ -4,22 +4,19 @@ import Testimonial, { ITestimonial } from '../molecules/Testimonial';
 
 const testimonials: ITestimonial[] = [
   {
-    text: 'To get social media testimonials like these, keep your customers engaged with your social media accounts by posting regularly yourself',
+    text: "Ryan always does an amazing job with men's haircut. Best and most stylish haircut in New York City.",
     imgSrc: ' https://i.pravatar.cc/300',
-    personName: 'Jake Archibald',
-    hashtag: '@jakearchie'
+    personName: 'Jake Archibald'
   },
   {
-    text: 'Just another engaged with your social media accounts by posting regularly yourself',
+    text: "Ryan is nothing short of a magician with a pair of scissors. He takes the time to understand his client's goals and his cuts are so good...",
     imgSrc: 'https://i.pravatar.cc/340',
-    personName: 'Miek Rypert',
-    hashtag: '@Rypert'
+    personName: 'Miek Rypert'
   },
   {
-    text: 'Superwith your social media accounts by posting regularly yourself',
+    text: 'I started seeing Ryan over 10 years ago and have never regretted it. Extremely trusted and expert hair stylist.',
     imgSrc: 'https://i.pravatar.cc/400',
-    personName: 'Slate Funfun',
-    hashtag: '@Funfun'
+    personName: 'Oleg C.'
   }
 ];
 

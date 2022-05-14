@@ -2,7 +2,7 @@ import Head from 'next/head';
 import React from 'react';
 
 import Footer from '../organisms/Footer';
-import Navbbar from '../organisms/Navbbar';
+import Navbar from '../organisms/Navbar';
 
 const Layout = ({ children }) => {
   return (
@@ -22,7 +22,7 @@ const Layout = ({ children }) => {
         />
       </Head>
 
-      <Navbbar />
+      <Navbar />
       <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
         {children}
       </main>
